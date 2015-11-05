@@ -94,6 +94,11 @@ $ curl "http://localhost:8500/v1/kv/web/key2?index=101&wait=5s"
 
 通过提供"?index=",我们要求等到`ModifIndex`的值大于101.然而参数"?wait=5s"限制查询到最多5秒，返回当前，不变的值。这样可以有效的等待键修改。另外，同样的方法可以被用来等待键的列表，等待直到所有的键有一个最新的修改时间。
 
+##下一步
+这只有一些API支持的例子。对于完整的文档，请阅读  /kv/ route of the HTTP API.
+
+接下来，我们将看被Consul支持的web UI参数。
+
 
 
 
